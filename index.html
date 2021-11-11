@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<style>
+  .bg-color {
+    background-color: azure;
+  }
+  .cstm-font {
+    font-family: 'Courier New', Courier, monospace;
+    color: cadetblue;
+    font-weight: bold;
+  }
+</style>
+
+<body class="bg-color">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <img src="statics/images/microscopic-bacteria-blue-background-d-illustration-microscopic-bacteria-147633017.jpg" style="height: 300px; width: 100%;">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <p class="cstm-font col-md-12 text-center">
+        This is a series of data that visualizes the collected biodiversity 
+        within subjects belly buttons to determine if there exists a strain that would be useful for synthetic meat products.
+        <br><br>
+        Integer finibus sagittis finibus. Duis rutrum imperdiet suscipit. Morbi in ante nisi. Nullam imperdiet, urna nec pellentesque finibus, 
+        leo sapien laoreet ligula, sit amet mollis nibh nisl non ex. Duis vel est sed purus imperdiet vehicula. Nulla nec ligula vitae ex 
+        aliquam scelerisque ac vel sapien. Nulla posuere lectus eu tortor facilisis luctus. Fusce dapibus velit orci, finibus egestas leo lacinia nec.  
+        Nulla semper tempor tellus, quis ornare odio pretium a. Integer posuere odio justo, in iaculis arcu rutrum et. Sed facilisis purus quis 
+        condimentum facilisis.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div id="bubble"></div>
+        <p>
+          <strong> All bacteria within subject's navel </strong>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <div id="bar"></div>
+        <p>
+          <strong> Most prevelant bacteria within subject's navel </strong>
+        </p>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+        <p>
+          <strong> How often subject bathes per week </strong>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+
+</body>
+
+</html>

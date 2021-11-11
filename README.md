@@ -6,4 +6,4 @@ Roza has a partially completed dashboard that she needs to finish. She has a com
 
 ## Results
 
-Located here on [Github Hosted Pages] (https://pswestmore72.github.io/plotly_and_biodiversity_UT_DATA)
+Located here on [Github Hosted Pages](https://pswestmore72.github.io/plotly_and_biodiversity_UT_DATA)
